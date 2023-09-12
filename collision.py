@@ -79,10 +79,5 @@ else:
     motorists = df[df['number of motorist injured'] >= 1][['off street name', 'number of motorist injured']].sort_values(by=['number of motorist injured'], ascending=False).dropna(how='any')[:5]
     st.write(motorists)
 
-
-
-
-
-
 if st.checkbox("Show Raw Data", False):
     st.write(df)
